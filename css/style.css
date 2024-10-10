@@ -1,0 +1,214 @@
+/* General dark theme body styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #121212; /* Dark background */
+    color: #e0e0e0; /* Light text for contrast */
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* Header styling */
+header {
+    background-color: #1f1f1f;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.7);
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+nav ul li a {
+    color: #e0e0e0;
+    text-decoration: none;
+    font-size: 1.2em;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #333;
+}
+
+/* Main content section styling */
+main {
+    padding: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Section styling */
+section {
+    background-color: #1e1e1e;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Section headings */
+section h2 {
+    color: #ff9800;
+    font-size: 2em;
+    margin-bottom: 15px;
+}
+
+/* Team members list */
+.team-members {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.team-members .member {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 8px;
+    flex: 1 1 calc(33% - 20px);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.team-members .member h3 {
+    margin-bottom: 10px;
+    font-size: 1.5em;
+    color: #ff9800;
+}
+
+.team-members .member p {
+    font-size: 1.2em;
+    color: #ddd;
+}
+
+/* Footer styling */
+footer {
+    background-color: #1f1f1f;
+    color: #e0e0e0;
+    text-align: center;
+    padding: 15px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.7);
+}
+
+/* Links in sections */
+section a {
+    color: #ff9800;
+    text-decoration: none;
+}
+
+section a:hover {
+    text-decoration: underline;
+}
+
+.contact-form {
+    max-width: 600px; /* Set a maximum width for the form */
+    margin: 20px auto; /* Center the form */
+    background-color: #2a2a2a; /* Dark background for the form */
+    padding: 20px; /* Add some padding */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Shadow effect */
+}
+
+.form-group {
+    margin-bottom: 15px; /* Space between form elements */
+}
+
+label {
+    display: block; /* Make labels block elements for better spacing */
+    color: white; /* Label color */
+    margin-bottom: 5px; /* Space between label and input */
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%; /* Full width */
+    padding: 10px; /* Add some padding */
+    border: 1px solid #ccc; /* Border for inputs */
+    border-radius: 4px; /* Rounded corners for inputs */
+    background-color: #1a1a1a; /* Dark input background */
+    color: white; /* Text color */
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    border-color: #ff8c00; /* Border color on focus */
+    outline: none; /* Remove outline */
+}
+
+button {
+    background-color: #ff8c00; /* Button background color */
+    color: white; /* Button text color */
+    padding: 10px 15px; /* Button padding */
+    border: none; /* Remove border */
+    border-radius: 4px; /* Rounded corners for button */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth background color transition */
+}
+
+button:hover {
+    background-color: #e07b00; /* Darker shade on hover */
+}
+
+.project-list {
+    display: grid; /* Use grid layout for projects */
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Responsive columns */
+    gap: 20px; /* Space between project items */
+    margin: 20px 0; /* Margin around project list */
+}
+
+.project {
+    background-color: #2a2a2a; /* Dark background for project cards */
+    padding: 15px; /* Inner padding */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Shadow effect */
+    transition: transform 0.2s; /* Smooth hover effect */
+}
+
+.project:hover {
+    transform: scale(1.02); /* Slightly enlarge project on hover */
+}
+
+.project h3 {
+    color: #ff8c00; /* Project title color */
+}
+
+.project p {
+    color: white; /* Description color */
+}
+
+.project-link {
+    display: inline-block; /* Make the link a block element */
+    margin-top: 10px; /* Space above link */
+    color: #ff8c00; /* Link color */
+    text-decoration: none; /* Remove underline */
+    border: 1px solid #ff8c00; /* Border around the link */
+    padding: 5px 10px; /* Padding for link */
+    border-radius: 4px; /* Rounded corners */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+}
+
+.project-link:hover {
+    background-color: #ff8c00; /* Background color on hover */
+    color: black; /* Text color on hover */
+}

@@ -71,8 +71,13 @@ section h2 {
 /* Team members list */
 .team-members {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap-reverse;
     justify-content: space-between;
+
+    @media(max-width:400px) {
+        display: block;
+        flex-wrap: nowrap;
+    }
 }
 
 .team-members .member {
@@ -85,6 +90,9 @@ section h2 {
     flex: 1 1 calc(33% - 20px);
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
 }
+.team-members .wide {
+    flex: 0 0 95%;
+}
 
 .team-members .member h3 {
     margin-bottom: 10px;
@@ -95,6 +103,14 @@ section h2 {
 .team-members .member p {
     font-size: 1.2em;
     color: #ddd;
+}
+.member__name {
+    padding: 0;
+    margin: 0;
+}
+.member__description {
+    padding: 0;
+    margin: 0;
 }
 
 /* Footer styling */
@@ -142,7 +158,7 @@ input[type="text"],
 input[type="email"],
 textarea {
     width: 100%; /* Full width */
-    padding: 10px; /* Add some padding */
+    padding:10px 0; /* Add some padding */
     border: 1px solid #ccc; /* Border for inputs */
     border-radius: 4px; /* Rounded corners for inputs */
     background-color: #1a1a1a; /* Dark input background */
@@ -211,4 +227,9 @@ button:hover {
 .project-link:hover {
     background-color: #ff8c00; /* Background color on hover */
     color: black; /* Text color on hover */
+}
+
+/* Button */
+.btn__download {
+    padding:15px 30px;
 }

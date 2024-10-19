@@ -63,7 +63,7 @@ section {
 
 /* Section headings */
 section h2 {
-    color: #ff9800;
+    color: #fff;
     font-size: 2em;
     margin-bottom: 15px;
 }
@@ -97,7 +97,7 @@ section h2 {
 .team-members .member h3 {
     margin-bottom: 10px;
     font-size: 1.5em;
-    color: #ff9800;
+    color: #fff;
 }
 
 .team-members .member p {
@@ -127,7 +127,7 @@ footer {
 
 /* Links in sections */
 section a {
-    color: #ff9800;
+    color: #fff;
     text-decoration: none;
 }
 
@@ -206,7 +206,7 @@ button:hover {
 }
 
 .project h3 {
-    color: #ff8c00; /* Project title color */
+    color: #fff; /* Project title color */
 }
 
 .project p {
@@ -216,7 +216,7 @@ button:hover {
 .project-link {
     display: inline-block; /* Make the link a block element */
     margin-top: 10px; /* Space above link */
-    color: #ff8c00; /* Link color */
+    color: #fff; /* Link color */
     text-decoration: none; /* Remove underline */
     border: 1px solid #ff8c00; /* Border around the link */
     padding: 5px 10px; /* Padding for link */

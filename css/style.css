@@ -216,7 +216,7 @@ button:hover {
 .project-link {
     display: inline-block; /* Make the link a block element */
     margin-top: 10px; /* Space above link */
-    color: #fff; /* Link color */
+    color: #ff8c00; /* Link color */
     text-decoration: none; /* Remove underline */
     border: 1px solid #ff8c00; /* Border around the link */
     padding: 5px 10px; /* Padding for link */
@@ -232,4 +232,27 @@ button:hover {
 /* Button */
 .btn__download {
     padding:15px 30px;
+    background-color: #ff8c00;
+    color: #fff;
+}
+
+/* Notep */ 
+.notep {
+    @media(max-width:400px) {
+        width: 335px;
+    }
+}
+pre {
+    white-space: pre-wrap;
+    margin-bottom: 25px;
+}
+
+/* News */
+.news {
+    background-color: #333;
+    color: #fff;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
 }
